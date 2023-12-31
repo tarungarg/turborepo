@@ -1,0 +1,39 @@
+@tailwind utilities;
+
+@layer utilities {
+  .e-f32 {
+    @apply text-3xl font-inter;
+  }
+
+  .e-f18 {
+    @apply text-lg font-inter;
+  }
+
+  .e-f24 {
+    @apply text-2xl font-inter;
+  }
+
+  .e-f32-w500-lh12 {
+    @apply e-f32 leading-3 font-medium;
+  }
+
+  .e-f18-w300-lh12 {
+    @apply e-f18 leading-3 font-light;
+  }
+
+  .e-f18-w400-lh12 {
+    @apply e-f18 leading-3 font-normal;
+  }
+
+  .e-f32-w400-lh12 {
+    @apply e-f32 leading-3 font-normal;
+  }
+
+  .e-f24-w500-lh12 {
+    @apply e-f24 leading-3 font-medium;
+  }
+
+  .e-f24-w500-lh30 {
+    @apply e-f24 leading-7.5 font-medium;
+  }
+}

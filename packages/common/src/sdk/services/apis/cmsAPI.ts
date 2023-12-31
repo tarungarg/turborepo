@@ -1,18 +1,21 @@
-import {FetchRequestType, HTTPVerbs, fetchRequest} from '@myshop/core';
+import { FetchRequestType, HTTPVerbs, fetchRequest } from '@myshop/core';
+import type {OptionalFetchRequestTypeOptions} from '@myshop/core'
 
 import { GetCMSDetailsPath } from './apiConstants';
 
-export const getCMSDetails = ():Promise<Response> => {
-    let req = {
+export const getCMSDetails = <T>({ options }: { options?: OptionalFetchRequestTypeOptions }): T => {
+    console.log("optionsoptionsoptions", options)
+    let req: FetchRequestType = {
         path: GetCMSDetailsPath,
         options: {
-            method: HTTPVerbs.GET
+            method: HTTPVerbs.GET,
+            ...options
         }
     }
 
-    return makeRequest(req)
+    return makeRequest<T>(req)
 }
 
-function makeRequest<T>(req: FetchRequestType): Promise<Response> {
-    return fetchRequest(req)
+function makeRequest<T>(req: FetchRequestType): T {
+    return fetchRequest(req) as T
 }

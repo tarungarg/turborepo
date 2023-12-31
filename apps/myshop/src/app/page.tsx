@@ -1,18 +1,19 @@
-"use client"
-import { Footer, Header } from '@myshop/common'
-import { ConstantsService, CoreConstantsEnum, LoggerService } from '@myshop/core';
-import StoreProvider from '@/providers/StoreProviders';
+import { Metadata } from 'next'
+import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'EShop Ecommerce Site',
+  description:
+    'Deals in Clothes. Have different kind of materials to buy like Jenes, kids clothig, Women clothing etc',
+}
 
 export default function Home() {
-
-  ConstantsService.setConstants(CoreConstantsEnum.APIUrl, 'http://localhost:4000')
-
   return (
     <main className="">
-        <StoreProvider>
-          <Header />
-          <Footer/>
-        </StoreProvider>
-      </main>
+      <div className="e-f32-w500-lh12 text-e-grey2 text-wrap">
+        adlfjadlsfjkdjsf
+      </div>
+      <Link href="/login">ABC</Link>
+    </main>
   )
 }
