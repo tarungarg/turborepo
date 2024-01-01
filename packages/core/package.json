@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "private": false,
   "exports": {
-    ".": "./src/sdk/index.ts"
+    ".": "./src/sdk/index.ts",
+    "./tailwindConfigJs": "./src/ui/tailwind-config/tailwind.config.js",
+    "./postcssConfig": "./src/ui/tailwind-config/postcss.config.js",
+    "./tailwindConfig.css": "./src/ui/tailwind-config/tailwindConfig.css"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
@@ -18,7 +21,9 @@
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "eslint": "^8.53.0",
+    "postcss": "^8",
     "react": "^18.2.0",
+    "tailwindcss": "^3.3.0",
     "typescript": "^5.2.2"
   }
 }

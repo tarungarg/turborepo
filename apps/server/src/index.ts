@@ -8,6 +8,7 @@ app.use(cors())
 const port = 4000
 
 app.get('/cmsData', (_req, res) => {
+  console.log('aaaaaaaaaaaaaaaaaaaaaaaaaaaaa')
   res.send(CmsData)
 })
 
