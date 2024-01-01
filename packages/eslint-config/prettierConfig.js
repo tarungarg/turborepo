@@ -4,6 +4,5 @@ module.export = {
   semi: false,
   singleQuote: true,
   bracketSpacing: true,
-  eslintIntegration: true,
   printWidth: 120,
 }
