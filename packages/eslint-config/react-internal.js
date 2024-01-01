@@ -23,6 +23,7 @@ module.exports = {
     'eslint-config-prettier',
     'eslint-config-turbo',
     'plugin:prettier/recommended',
+    'plugin:jsx-a11y/recommended',
   ],
   plugins: ['eslint-plugin-prettier'],
   globals: {

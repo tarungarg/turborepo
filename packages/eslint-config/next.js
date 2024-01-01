@@ -9,6 +9,7 @@ module.exports = {
     'prettier',
     require.resolve('@vercel/style-guide/eslint/next'),
     'eslint-config-turbo',
+    'plugin:jsx-a11y/recommended',
   ],
   globals: {
     React: true,
@@ -29,6 +30,7 @@ module.exports = {
   ignorePatterns: [
     // Ignore dotfiles
     '.*.js',
+    '*.js',
     'node_modules/',
     'dist/',
   ],
