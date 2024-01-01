@@ -1,64 +1,52 @@
 module.exports = {
-  env: {
-    node: true,
-  },
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'airbnb-base',
-    'airbnb-typescript/base',
+    'airbnb',
+    'airbnb/hooks',
+    'plugin:react/recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
-    'plugin:import/typescript',
+    'plugin:jsx-a11y/recommended',
     'prettier',
   ],
-  plugins: ['import', '@typescript-eslint'],
+  env: {
+    browser: true,
+    es6: true,
+    commonjs: true,
+  },
   parserOptions: {
-    project: ['./tsconfig.json'],
+    ecmaVersion: 2020,
+    ecmaFeatures: { jsx: true },
   },
-  settings: {
-    'import/parsers': {
-      '@typescript-eslint/parser': ['.ts'],
-    },
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.ts'],
-        moduleDirectory: ['node_modules', 'src/'],
-      },
-      typescript: {
-        alwaysTryTypes: true,
-        project: '.',
-      },
-    },
-  },
-  overrides: [
-    {
-      env: {
-        jest: true,
-      },
-      files: ['**/__tests__/**/*.[jt]s', '**/?(*.)+(spec|test).[jt]s'],
-      extends: ['plugin:jest/recommended'],
-      rules: {
-        'import/no-extraneous-dependencies': [
-          'off',
-          { devDependencies: ['**/?(*.)+(spec|test).[jt]s'] },
-        ],
-      },
-    },
-  ],
-   rules: {
-   'prettier/prettier': [
-      'error',
+  plugins: ['react', 'prettier'],
+  rules: {
+    // __ CORE
+    'import/prefer-default-export': 0,
+    'no-console': 'warn',
+    'no-nested-ternary': 0,
+    'no-underscore-dangle': 0,
+    'no-unused-expressions': ['error', { allowTernary: true }],
+    camelcase: 0,
+    'react/self-closing-comp': 1,
+    'react/jsx-filename-extension': [
+      1,
       {
-        trailingComma: 'all',
-        tabWidth: 2,
-        semi: false,
-        singleQuote: true,
-        bracketSpacing: true,
-        eslintIntegration: true,
-        printWidth: 120,
+        extensions: ['.js', '.jsx', '.tsx'],
       },
     ],
+    // __ REACT
+    'react/prop-types': 0,
+    'react/destructuring-assignment': 0,
+    'react/jsx-no-comment-textnodes': 0,
+    'react/jsx-props-no-spreading': 0,
+    'react/no-array-index-key': 0,
+    'react/no-unescaped-entities': 0,
+    'react/require-default-props': 0,
+    // __ ACCESSIBILITY
+    'jsx-a11y/label-has-for': 0,
+    'jsx-a11y/anchor-is-valid': 0,
+    // __ NEXT.JS
+    'react/react-in-jsx-scope': 0,
+    // __ PRETTIER
   },
-  ignorePatterns: ['**/*.js', 'node_modules', '.turbo', 'dist', 'coverage'],
 }

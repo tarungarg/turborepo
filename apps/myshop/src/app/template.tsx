@@ -4,11 +4,8 @@ import Layout from '@/components/layout'
 import { ConstantsService, CoreConstantsEnum } from '@myshop/core'
 import './globals.css'
 
-export default function Template({ children }: { children: React.ReactNode }) {
-  ConstantsService.setConstants(
-    CoreConstantsEnum.APIUrl,
-    process.env.SERVER_URI as string,
-  )
+export default function Template({ children }: { readonly children: React.ReactNode }) {
+  ConstantsService.setConstants(CoreConstantsEnum.APIUrl, 'http://localhost:4000')
 
   return (
     <StoreProvider>
