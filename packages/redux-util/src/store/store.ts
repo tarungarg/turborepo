@@ -1,5 +1,5 @@
-import { configureStore } from '@reduxjs/toolkit';
-import { cmsSlice } from '@myshop/common';
+import { configureStore } from '@reduxjs/toolkit'
+import { cmsSlice } from '@myshop/common'
 
 export const store = configureStore({
   reducer: {

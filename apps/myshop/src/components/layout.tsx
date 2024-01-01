@@ -1,25 +1,21 @@
-import { Footer, Header } from '@myshop/common'
 import React from 'react'
-import { getCMSDetails } from '@myshop/common'
-import { CmsMetaModel } from '@myshop/common'
+import { getCMSDetails, CmsMetaModel, Footer, Header } from '@myshop/common'
 
-export default async function Layout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default async function Layout({ children }: { readonly children: React.ReactNode }) {
   const cmsData: CmsMetaModel = await getCMSData()
 
   return (
     <>
       <Header cmsData={cmsData} />
-      <div className="bg-red text-red w-100 vvv"> adlfjadlsfjkdjsf</div>
+      <div className="w-100"> adlfjadlsfjkdjsf</div>
       {children}
       <Footer cmsData={cmsData} />
     </>
   )
 }
 
-export async function getCMSData(): Promise<Awaited<CmsMetaModel>> {
-  return await getCMSDetails<CmsMetaModel>({})
+export async function getCMSData(): Promise<CmsMetaModel> {
+  let cmsData = await getCMSDetails<Promise<Response>>({})
+  cmsData = await cmsData.json()
+  return cmsData as Response & CmsMetaModel
 }

@@ -1,12 +1,11 @@
-import { CmsMetaModel } from "../../sdk/services/models";
+import { CmsMetaModel } from '../../sdk/services/models'
 
-function Footer({cmsData}: {cmsData: CmsMetaModel}) {
-
-    return (
-        <>
-            <h1>{JSON.stringify(cmsData)}</h1>
-        </>
-    );
+function Footer({ cmsData }: { cmsData: CmsMetaModel }) {
+  return (
+    <>
+      <h1>{JSON.stringify(cmsData)}</h1>
+    </>
+  )
 }
 
-export default Footer;
+export default Footer
