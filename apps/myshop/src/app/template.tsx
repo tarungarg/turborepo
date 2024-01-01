@@ -7,7 +7,7 @@ import './globals.css'
 export default function Template({ children }: { children: React.ReactNode }) {
   ConstantsService.setConstants(
     CoreConstantsEnum.APIUrl,
-    'http://localhost:4000',
+    process.env.SERVER_URI as string,
   )
 
   return (

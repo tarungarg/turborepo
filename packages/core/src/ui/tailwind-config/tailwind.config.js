@@ -21,7 +21,7 @@ const config = {
     spacing,
     borderRadius,
     fontFamily: {
-      inter: ['Inter'],
+      inter: ['var(--font-inter)'],
     },
     minWidth: theme => ({
       ...theme('spacing'),
