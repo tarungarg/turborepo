@@ -1,7 +1,7 @@
 const { resolve } = require('node:path')
 
 const project = resolve(process.cwd(), 'tsconfig.json')
-const { prettierConfig } = require('@myshop/eslint-config/prettierConfig')
+const prettierConfig = require('./prettierConfig.js')
 
 /*
  * This is a custom ESLint configuration for use with
@@ -24,8 +24,9 @@ module.exports = {
     'eslint-config-turbo',
     'plugin:prettier/recommended',
     'plugin:jsx-a11y/recommended',
+    'prettier',
   ],
-  plugins: ['eslint-plugin-prettier'],
+  plugins: ['eslint-plugin-prettier', 'prettier'],
   globals: {
     React: true,
     JSX: true,
@@ -51,4 +52,7 @@ module.exports = {
     // Force ESLint to detect .tsx files
     { files: ['*.js?(x)', '*.ts?(x)'] },
   ],
+  rules: {
+    'prettier/prettier': ['error', { ...prettierConfig, endOfLine: 'auto' }],
+  },
 }
