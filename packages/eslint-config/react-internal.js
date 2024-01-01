@@ -22,6 +22,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'eslint-config-prettier',
     'eslint-config-turbo',
+    'plugin:prettier/recommended',
   ],
   plugins: ['eslint-plugin-prettier'],
   globals: {
@@ -49,7 +50,4 @@ module.exports = {
     // Force ESLint to detect .tsx files
     { files: ['*.js?(x)', '*.ts?(x)'] },
   ],
-  rules: {
-    'prettier/prettier': ['error', prettierConfig],
-  },
 }

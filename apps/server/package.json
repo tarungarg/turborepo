@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "yarn build && nodemon ./dist/src/index.js",
+    "dev": "yarn build && yarn start",
+    "start": "nodemon ./dist/src/index.js",
     "build": "tsc"
   },
   "keywords": [],

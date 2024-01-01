@@ -531,6 +531,11 @@
   dependencies:
     glob "7.1.7"
 
+"@next/font@^14.0.4":
+  version "14.0.4"
+  resolved "https://registry.yarnpkg.com/@next/font/-/font-14.0.4.tgz#2df271479fa967d49c8ca8c1ca9db1506f8fe585"
+  integrity sha512-anSlBJxaSlJ2S1mhfN/zddg8RsWvUCS6vMn9Sqjem3EukD6Z44lsj1lwXFdifUgwsJvw5Uf8MKupksAfRmDbeQ==
+
 "@next/swc-darwin-arm64@14.0.4":
   version "14.0.4"
   resolved "https://registry.yarnpkg.com/@next/swc-darwin-arm64/-/swc-darwin-arm64-14.0.4.tgz#27b1854c2cd04eb1d5e75081a1a792ad91526618"
@@ -1522,6 +1527,18 @@ asynciterator.prototype@^1.0.0:
   dependencies:
     has-symbols "^1.0.3"
 
+autoprefixer@^10.4.16:
+  version "10.4.16"
+  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.4.16.tgz#fad1411024d8670880bdece3970aa72e3572feb8"
+  integrity sha512-7vd3UC6xKp0HLfua5IjZlcXvGAGy7cBAXTg2lyQ/8WpNhd6SiZ8Be+xm3FyBSYJx5GKcpRCzBh7RH4/0dnY+uQ==
+  dependencies:
+    browserslist "^4.21.10"
+    caniuse-lite "^1.0.30001538"
+    fraction.js "^4.3.6"
+    normalize-range "^0.1.2"
+    picocolors "^1.0.0"
+    postcss-value-parser "^4.2.0"
+
 available-typed-arrays@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/available-typed-arrays/-/available-typed-arrays-1.0.5.tgz#92f95616501069d07d10edb2fc37d3e1c65123b7"
@@ -1648,7 +1665,7 @@ braces@^3.0.2, braces@~3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
-browserslist@^4.22.2:
+browserslist@^4.21.10, browserslist@^4.22.2:
   version "4.22.2"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.22.2.tgz#704c4943072bd81ea18997f3bd2180e89c77874b"
   integrity sha512-0UgcrvQmBDvZHFGdYUehrCNIazki7/lUP3kkoi/r3YB2amZbFM9J43ZRkJTXBUZK4gmx56+Sqk9+Vs9mwZx9+A==
@@ -1774,7 +1791,7 @@ camelcase@^7.0.1:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-7.0.1.tgz#f02e50af9fd7782bc8b88a3558c32fd3a388f048"
   integrity sha512-xlx1yCK2Oc1APsPXDL2LdlNP6+uu8OCDdhOBSVT279M/S+y75O30C2VuD8T2ogdePBBl7PfPF4504tnLgX3zfw==
 
-caniuse-lite@^1.0.30001406, caniuse-lite@^1.0.30001565:
+caniuse-lite@^1.0.30001406, caniuse-lite@^1.0.30001538, caniuse-lite@^1.0.30001565:
   version "1.0.30001572"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001572.tgz#1ccf7dc92d2ee2f92ed3a54e11b7b4a3041acfa0"
   integrity sha512-1Pbh5FLmn5y4+QhNyJE9j3/7dK44dGB83/ZMjv/qJk86TvDbjk0LosiZo0i0WB0Vx607qMX9jYrn1VLHCkN4rw==
@@ -3251,6 +3268,11 @@ forwarded@0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/forwarded/-/forwarded-0.2.0.tgz#2269936428aad4c15c7ebe9779a84bf0b2a81811"
   integrity sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow==
+
+fraction.js@^4.3.6:
+  version "4.3.7"
+  resolved "https://registry.yarnpkg.com/fraction.js/-/fraction.js-4.3.7.tgz#06ca0085157e42fda7f9e726e79fefc4068840f7"
+  integrity sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==
 
 fresh@0.5.2:
   version "0.5.2"
@@ -5076,6 +5098,11 @@ normalize-path@^3.0.0, normalize-path@~3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
   integrity sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==
+
+normalize-range@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/normalize-range/-/normalize-range-0.1.2.tgz#2d10c06bdfd312ea9777695a4d28439456b75942"
+  integrity sha512-bdok/XvKII3nUpklnV6P2hxtMNrCboOjAcyBuQnWEhO665FwrSNRxU+AqpsyvO6LgGYPspN+lu5CLtw4jPRKNA==
 
 normalize-url@^8.0.0:
   version "8.0.0"
