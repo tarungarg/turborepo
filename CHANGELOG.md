@@ -1,5 +1,13 @@
 
 
+## [0.2.0](https://github.com/tarungarg/turborepo/compare/0.1.0...0.2.0) (2024-01-01)
+
+
+### Features
+
+* redux next js integration ([cbb0429](https://github.com/tarungarg/turborepo/commit/cbb0429b8825cb41a6d0a62cab4757773c07c841))
+* tailwind setup ([dab8372](https://github.com/tarungarg/turborepo/commit/dab8372ef709f8492a9d98898e370e831ba431f8))
+
 ## 0.1.0 (2023-12-29)
 
 
