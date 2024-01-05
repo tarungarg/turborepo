@@ -1,0 +1,25 @@
+import { startServerAndCreateNextHandler } from '@as-integrations/next'
+import { ApolloServer } from '@apollo/server'
+import { gql } from 'graphql-tag'
+
+const resolvers = {
+  Query: {
+    hello: () => 'world',
+  },
+}
+
+// QUERY, MUTATION, SUBSCRIPTIONS
+const typeDefs = gql`
+  type Query {
+    user: String
+  }
+`
+
+const server = new ApolloServer({
+  resolvers,
+  typeDefs,
+})
+
+const handler = startServerAndCreateNextHandler(server)
+
+export { handler as GET, handler as POST }

@@ -1,6 +1,9 @@
 {
   "extends": "@myshop/typescript-config/nextjs.json",
   "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
     "plugins": [
       {
         "name": "next"

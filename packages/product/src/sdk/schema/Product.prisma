@@ -1,0 +1,14 @@
+model Product {
+  id                 Int     @id @default(autoincrement())
+  skuId              String  @unique
+  title              String
+  description        String
+  price              String
+  discountPercentage String?
+  rating             String?
+  stock              String
+  brand              String
+  category           String
+  thumbnail          String
+  published          Boolean @default(true)
+}

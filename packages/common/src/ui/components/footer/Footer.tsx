@@ -1,4 +1,4 @@
-import { CmsMetaModel } from '../../sdk/services/models'
+import { CmsMetaModel } from '../../../sdk/services/models'
 
 function Footer({ cmsData }: { cmsData: CmsMetaModel }) {
   return (
