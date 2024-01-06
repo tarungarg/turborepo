@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "other": "npx prisma studio & npx @envyjs/webui",
     "build": "next build",
     "start": "next start",
     "lint": "eslint . --max-warnings 0"
@@ -11,12 +12,14 @@
   "dependencies": {
     "@myshop/common": "*",
     "@myshop/core": "*",
-    "@myshop/ui": "*",
-    "@myshop/product": "*"
+    "@myshop/product": "*",
+    "@myshop/ui": "*"
   },
   "devDependencies": {
-    "@myshop/typescript-config": "*",
+    "@envyjs/nextjs": "^0.9.1",
+    "@envyjs/webui": "^0.9.1",
     "@myshop/eslint-config": "*",
+    "@myshop/typescript-config": "*",
     "@next/eslint-plugin-next": "^14.0.2",
     "typescript": "^5.2.2"
   }

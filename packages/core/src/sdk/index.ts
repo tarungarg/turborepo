@@ -8,3 +8,4 @@ export type {
 } from './fetchRequest/fetchRequest'
 export type { CoreConstants, OptionalMapped } from './types/commonTypes'
 export { CoreConstantsEnum } from './types/commonTypes'
+export { default as prisma } from './prismaClient/db'
