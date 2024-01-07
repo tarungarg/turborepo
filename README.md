@@ -1,3 +1,10 @@
+# Stylex setup
+
+1. Use setup, https://stylexjs.com/docs/learn/installation/
+2. NextJs setup example https://github.com/facebook/stylex/tree/main/apps/nextjs-example
+3. In monorepo, "myshop/core" will have to export stylex file separately. ("./variable.stylex": "./src/ui/stylx-config/theme/variable.stylex.ts") (https://github.com/facebook/stylex/discussions/111)
+4. Need to remove "next/font" everywhere. Next/font use SWC but for stylex we need babelrc
+
 # Turborepo starter
 
 This is an official starter Turborepo.
@@ -78,3 +85,5 @@ Learn more about the power of Turborepo:
 - [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
 - [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
 - [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+
+

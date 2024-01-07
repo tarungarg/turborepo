@@ -14,9 +14,11 @@
     "@myshop/ui": "*"
   },
   "devDependencies": {
-    "@myshop/typescript-config": "*",
     "@myshop/eslint-config": "*",
+    "@myshop/typescript-config": "*",
     "@next/eslint-plugin-next": "^14.0.2",
+    "@stylexjs/babel-plugin": "^0.4.1",
+    "@stylexjs/nextjs-plugin": "^0.4.1",
     "typescript": "^5.2.2"
   }
 }

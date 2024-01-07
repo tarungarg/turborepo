@@ -6,7 +6,8 @@
     ".": "./src/sdk/index.ts",
     "./tailwindConfigJs": "./src/ui/tailwind-config/tailwind.config.js",
     "./postcssConfig": "./src/ui/tailwind-config/postcss.config.js",
-    "./tailwindConfig.css": "./src/ui/tailwind-config/tailwindConfig.css"
+    "./tailwindConfig.css": "./src/ui/tailwind-config/tailwindConfig.css",
+    "./variable.stylex": "./src/ui/stylx-config/theme/variable.stylex.ts"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
@@ -27,6 +28,8 @@
     "typescript": "5.2.2"
   },
   "dependencies": {
+    "@stylexjs/open-props": "^0.4.1",
+    "@stylexjs/stylex": "^0.4.1",
     "next": "14.0.4",
     "react": "18",
     "react-dom": "18"

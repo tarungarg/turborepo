@@ -1,7 +1,15 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: false,
-  transpilePackages: ['@myshop/ui', '@myshop/common', '@myshop/core'],
-}
 
-module.exports = nextConfig
+const stylexPlugin = require('@stylexjs/nextjs-plugin')
+const babelrc = require('./.babelrc.js')
+const plugins = babelrc.plugins
+const [_name, options] = plugins.find((plugin) => Array.isArray(plugin) && plugin[0] === '@stylexjs/babel-plugin')
+const rootDir = options.unstable_moduleResolution.rootDir ?? __dirname
+
+module.exports = stylexPlugin({
+  rootDir,
+  useCSSLayers: true,
+})({
+  reactStrictMode: false,
+  transpilePackages: ['@stylexjs/open-props', '@myshop/ui', '@myshop/common', '@myshop/core'],
+})
