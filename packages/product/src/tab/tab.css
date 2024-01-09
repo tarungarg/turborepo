@@ -3,10 +3,9 @@
 }
 
 .MuiButtonBase-root.mdc-tab {
-  flex: initial !important;
-  font-size: 24px;
+  /* flex: initial !important; */
   text-transform: capitalize;
-  margin: 0 40px;
+  /* margin: 0 40px; */
   padding: 16px 0;
 }
 
@@ -27,8 +26,6 @@
   width: 100%;
   margin: auto;
   padding: 32px 0;
-  font-size: 18px;
-  line-height: 32px;
 }
 
 .mdc-tab__content {
@@ -43,16 +40,23 @@
 
 @media (min-width: 992px) {
   .mds-tabs-container {
-    padding: 80px 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 40px;
+    padding-bottom: 61px;
   }
   .mdc-tab-content {
-    max-width: 1002px;
-    max-height: 27em;
+    max-height: 23.4em;
+    min-height: 23.4em;
     overflow-y: hidden;
     text-overflow: ellipsis;
   }
   .MuiTabPanel-root {
     padding-top: 38px !important;
+  }
+  .MuiTabs-flexContainer {
+    display: flex;
+    gap: 100px;
   }
 }
 @media (max-width: 991px) {
@@ -71,5 +75,9 @@
 
   .MuiTabPanel-root {
     padding-top: 16px !important;
+  }
+  .MuiTabs-flexContainer {
+    display: flex;
+    gap: 20px;
   }
 }

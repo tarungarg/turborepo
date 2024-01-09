@@ -31,10 +31,6 @@
     padding: 24px;
   }
 
-  .mds-header-bottom-right {
-    width: 240px;
-  }
-
   .mds-right-details {
     max-width: 240px;
   }
@@ -63,29 +59,6 @@
 
   .mds-header-bottom-middle .mds-header-menus-list .mds-header-menu {
     margin: 0 16px;
-  }
-
-  .mds-product-details-footer .mdc-button {
-    padding: 22px 14px;
-    font-size: 14px;
-  }
-
-  .mds-product-quantity {
-    max-width: 140px;
-    margin-right: 20px;
-  }
-
-  .mds-product-quantity input {
-    font-size: 18px;
-  }
-
-  .mds-product-quantity button {
-    font-size: 20px;
-  }
-
-  .mds-size-single {
-    font-size: 14px;
-    padding: 14px 24px;
   }
 
   .mds-footer-tile {
@@ -186,16 +159,6 @@
     flex-direction: column-reverse;
   }
 
-  .mds-size-single {
-    padding: 12px 16px;
-    font-size: 12px;
-  }
-
-  .mds-product-quantity {
-    width: auto;
-    margin-right: 10px;
-  }
-
   .mds-product-thumnail-single {
     height: 75px;
     margin-right: 10px;
@@ -204,23 +167,6 @@
 
   .mds-product-thumnail-single:last-of-type {
     margin-right: 0px;
-  }
-
-  .mds-product-details-footer .mdc-button {
-    padding: 16px 8px;
-    font-size: 10px;
-    width: 96px;
-  }
-
-  .mds-product-quantity input {
-    width: 40px;
-    font-size: 16px;
-  }
-
-  .mds-product-quantity button {
-    font-size: 20px;
-    padding: 0 8px;
-    width: 36px;
   }
 
   .mds-product-thumnail-single:last-of-type {
@@ -240,10 +186,6 @@
     margin-top: 20px;
   }
 
-  .mds-product-name {
-    font-size: 24px;
-  }
-
   .mds-product-short-details {
     padding-left: 0;
   }
@@ -253,7 +195,6 @@
 
   .mdc-tab {
     margin: 0 4px;
-    font-size: 14px;
     padding: 0 4px;
   }
 
@@ -318,68 +259,11 @@
     background: #e73c17;
   }
 
-  .mds-banner-breadcrumb {
-    font-size: 10px;
-  }
-
   .mds-product-short-details {
     font-size: 8px;
   }
 
-  .mds-brand,
-  .mds-model,
-  .mds-availability {
-    font-size: 10px;
-    margin-bottom: 6px;
-  }
-
-  .mds-product-name {
-    font-size: 15px;
-  }
-
   .mds-rating .material-icons {
-    font-size: 12px;
-  }
-
-  .mds-description-list-unstyled {
-    padding-left: 12px;
-    font-size: 10px;
-  }
-
-  .mds-size-single {
-    padding: 7px 13px;
-    font-size: 9px;
-  }
-
-  .mds-tex-title {
-    font-size: 9px;
-  }
-
-  .mds-current-price {
-    font-size: 15px;
-  }
-
-  .mds-current-price.mds-price-cutoff {
-    font-size: 12px;
-  }
-
-  .mds-product-details-footer .mdc-button {
-    font-size: 10px;
-    padding: 11px 8px;
-  }
-
-  .mds-product-quantity input {
-    font-size: 12px;
-    width: 35px;
-    padding: 11px 0;
-  }
-
-  .mds-product-quantity button {
-    font-size: 16px;
-    width: 30px;
-  }
-
-  .mdc-tab {
     font-size: 12px;
   }
 
@@ -388,16 +272,11 @@
   }
 
   .MuiButtonBase-root.mdc-tab {
-    font-size: 16px;
-    margin: 0 5px;
+    /* margin: 0 5px; */
   }
 
   .carousel .slide img {
-    height: 150px;
-  }
-
-  .carousel .thumbs-wrapper {
-    margin: 20px 0;
+    height: auto;
   }
 
   .carousel .thumbs {
@@ -465,65 +344,11 @@
 }
 
 @media (max-width: 324px) {
-  .mds-banner-breadcrumb {
-    font-size: 10px;
-  }
-
   .mds-product-short-details {
     font-size: 6px;
   }
 
-  .mds-brand,
-  .mds-model,
-  .mds-availability {
-    font-size: 8px;
-  }
-
-  .mds-product-name {
-    font-size: 13px;
-  }
-
   .mds-rating .material-icons {
-    font-size: 10px;
-  }
-
-  .mds-description-list-unstyled {
-    font-size: 8px;
-  }
-
-  .mds-size-single {
-    font-size: 7px;
-  }
-
-  .mds-tex-title {
-    font-size: 7px;
-  }
-
-  .mds-current-price {
-    font-size: 13px;
-  }
-
-  .mds-current-price.mds-price-cutoff {
-    font-size: 10px;
-  }
-
-  .mds-product-details-footer .mdc-button {
-    font-size: 8px;
-  }
-
-  .mds-product-quantity input {
-    font-size: 10px;
-  }
-
-  .mds-product-quantity button {
-    font-size: 14px;
-  }
-
-  .mdc-tab {
-    font-size: 10px;
-  }
-
-  .mdc-tab-content {
     font-size: 10px;
   }
 

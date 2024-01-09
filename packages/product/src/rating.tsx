@@ -1,13 +1,11 @@
-import Rating from '@mui/material/Rating';
+import Rating from '@mui/material/Rating'
 
 interface RatingProps {
-    rating: number;
+  rating: number
 }
 
-const CustomRating = ({rating }: RatingProps) => {
-    return (
-		<Rating name="read-only" value={rating} readOnly />
-	)
+const CustomRating = ({ rating }: RatingProps) => {
+  return <Rating className="rating-class" name="read-only" value={rating} readOnly size="large" />
 }
 
 export default CustomRating

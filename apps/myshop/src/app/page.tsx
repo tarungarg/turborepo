@@ -7,7 +7,6 @@ export const metadata: Metadata = {
 }
 
 export default function Home() {
-  console.log('aaaa')
   return (
     <main className="">
       <Link href="/login">Login</Link>

@@ -1,5 +1,5 @@
 const plugin = require('tailwindcss/plugin')
-import { colors, fontSize, lineHeight, spacing, borderRadius } from './theme'
+import { colors, fontSize, lineHeight, spacing, borderRadius, letterSpacing } from './theme'
 
 // Base cont size setting rem value
 
@@ -12,7 +12,12 @@ const config = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-    '../../packages/**/*.{js,ts,jsx,tsx}',
+    './src/app/**/*.css',
+    '../../packages/common/**/*.{js,ts,jsx,tsx}',
+    '../../packages/core/**/*.{js,ts,jsx,tsx}',
+    '../../packages/core/**/*.css',
+    '../../packages/common/**/*.css',
+    '../../packages/product/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     colors,
@@ -20,13 +25,14 @@ const config = {
     fontSize,
     spacing,
     borderRadius,
+    letterSpacing,
     fontFamily: {
       inter: ['var(--font-inter)'],
     },
-    minWidth: theme => ({
+    minWidth: (theme) => ({
       ...theme('spacing'),
     }),
-    maxWidth: theme => ({
+    maxWidth: (theme) => ({
       ...theme('spacing'),
       0: '0rem',
       xs: '32.0rem',
@@ -41,6 +47,11 @@ const config = {
       '6xl': '115.2rem',
       '7xl': '128.0rem',
     }),
+    screens: {
+      sm: { max: '991px' },
+      lg: '992px',
+      '3xl': '1600px',
+    },
     extend: {},
   },
   plugins: [

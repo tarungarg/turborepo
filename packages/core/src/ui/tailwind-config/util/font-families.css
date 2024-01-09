@@ -1,39 +1,168 @@
 @tailwind utilities;
 
 @layer utilities {
-  .e-f32 {
-    @apply text-3xl font-inter;
+  .f-6-fw-300-lh-14 {
+    font-size: 0.6rem;
+    font-weight: 300;
+    line-height: 1.4rem;
   }
 
-  .e-f18 {
-    @apply text-lg font-inter;
+  .f-7-fw-500-lh-14 {
+    font-size: 0.7rem;
+    font-weight: 500;
+    line-height: 1.4rem;
   }
 
-  .e-f24 {
-    @apply text-2xl font-inter;
+  .f-7-fw-300-lh-14 {
+    font-size: 0.7rem;
+    font-weight: 300;
+    line-height: 1.4rem;
   }
 
-  .e-f32-w500-lh12 {
-    @apply e-f32 leading-3 font-medium;
+  .f-8-fw-300-lh-14 {
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1.4rem;
   }
 
-  .e-f18-w300-lh12 {
-    @apply e-f18 leading-3 font-light;
+  .f-8-fw-400-lh-14 {
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.4rem;
   }
 
-  .e-f18-w400-lh12 {
-    @apply e-f18 leading-3 font-normal;
+  .f-8-fw-500-lh-14 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.4rem;
   }
 
-  .e-f32-w400-lh12 {
-    @apply e-f32 leading-3 font-normal;
+  .f-10-fw-300-lh-14 {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.4rem;
   }
 
-  .e-f24-w500-lh12 {
-    @apply e-f24 leading-3 font-medium;
+  .f-10-fw-500-lh-14 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4rem;
   }
 
-  .e-f24-w500-lh30 {
-    @apply e-f24 leading-7.5 font-medium;
+  .f-13-fw-500-lh-14 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+  }
+
+  /* desktop */
+  .f-14-fw-400-lh-14 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+  }
+
+  .f-14-fw-500-lh-14 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+  }
+
+  .f-15-fw-400-lh-14 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+  }
+
+  .f-15-fw-300-lh-14 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.4rem;
+  }
+
+  .f-16-fw-400-lh-14 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+  }
+
+  .f-18-fw-500-lh-14 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+  }
+
+  .f-18-fw-300-lh-24 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2.4rem;
+  }
+
+  .f-18-fw-300-lh-14 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.4rem;
+  }
+
+  .f-18-fw-300-lh-32 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3.2rem;
+  }
+
+  .f-18-fw-400-lh-14 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+  }
+
+  .f-20-fw-300-lh-14 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+  }
+
+  .f-24-fw-400-lh-14 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+  }
+
+  .f-24-fw-500-lh-14 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+  }
+
+  .f-32-fw-400-lh-14 {
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+  }
+
+  .f-32-fw-400-lh-34 {
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 3.4rem;
+  }
+
+  .f-32-fw-500-lh-14 {
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4rem;
+  }
+
+  .f-32-fw-500-lh-34 {
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.4rem;
+  }
+
+  .f-40-fw-500-lh-14 {
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1.4rem;
   }
 }

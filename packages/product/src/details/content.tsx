@@ -12,7 +12,8 @@ const Content = ({ product }: { product: ProductData }) => {
   const showData = (label: string, data: string) => {
     return (
       <div className="mds-model">
-        <span className="mds-model-title">{label}:</span> {data}
+        <span className="lg:f-18-fw-400-lh-14 sm:f-8-fw-400-lh-14">{label}:</span>{' '}
+        <span className="lg:f-18-fw-300-lh-14 sm:f-8-fw-300-lh-14">{data}</span>
       </div>
     )
   }
@@ -36,6 +37,12 @@ const Content = ({ product }: { product: ProductData }) => {
     }
   }
 
+  const getClassNameForVariant = (i: string) => {
+    return i == 'a'
+      ? 'mds-size-single lg:f-18-fw-500-lh-14 sm:f-7-fw-500-lh-14'
+      : 'mds-size-single lg:f-18-fw-300-lh-14 sm:f-7-fw-300-lh-14'
+  }
+
   return (
     <div className="mds-products-right-section">
       <div className="mds-product-details-description">
@@ -43,12 +50,18 @@ const Content = ({ product }: { product: ProductData }) => {
         {showData('Model', product.model)}
         {showData('Availability', product.availability)}
 
-        <h1 className="mds-product-name">{product.desc}</h1>
-        <CustomRating rating={product.rating} />
+        <div className="mds-product-name lg:f-32-fw-500-lh-34 sm:f-13-fw-500-lh-14">{product.desc}</div>
+        <div>
+          <CustomRating rating={product.rating} />
+        </div>
         <div className="mds-description-list">
           <ul className="mds-description-list-unstyled" style={{ listStyle: 'disc' }}>
             {product.featureList?.length
-              ? product.featureList.map((feature: string) => <li key={feature}>{feature}</li>)
+              ? product.featureList.map((feature: string) => (
+                  <li key={feature} className="lg:f-18-fw-300-lh-24 sm:f-8-fw-300-lh-14">
+                    {feature}
+                  </li>
+                ))
               : null}
           </ul>
         </div>
@@ -60,7 +73,11 @@ const Content = ({ product }: { product: ProductData }) => {
                   <div
                     key={size + index}
                     onClick={() => onSizeSelection(index)}
-                    className={activeIndex === index ? 'mds-size-single mds-size-active' : 'mds-size-single'}
+                    className={
+                      activeIndex === index
+                        ? `${getClassNameForVariant('a')} mds-size-active`
+                        : `${getClassNameForVariant('n')}`
+                    }
                   >
                     {size}
                   </div>
@@ -70,13 +87,13 @@ const Content = ({ product }: { product: ProductData }) => {
         </div>
 
         <div className="mds-divider"></div>
-        <div className="mds-tex-title">USD(incl. of all taxes)</div>
+        <div className="mds-tex-title lg:f-16-fw-400-lh-14 sm:f-7-fw-300-lh-14">USD (incl. of all taxes)</div>
         {product.price?.actualPrice > product.price?.discountedPrice ? (
           <div className="mds-price-wrapper">
-            <span className="mds-current-price">
+            <span className="mds-current-price lg:f-32-fw-400-lh-34 sm:f-13-fw-500-lh-14">
               ${qty ? calculatePrice(qty, product.price?.discountedPrice) : product.price?.discountedPrice}
             </span>
-            <span className="mds-current-price mds-price-cutoff">
+            <span className="mds-current-price mds-price-cutoff lg:f-24-fw-400-lh-14 sm:f-10-fw-500-lh-14">
               <del>${qty ? calculatePrice(qty, product.price.actualPrice) : product.price?.actualPrice}</del>
             </span>
           </div>
@@ -88,10 +105,10 @@ const Content = ({ product }: { product: ProductData }) => {
         <div className="mds-product-details-footer">
           <Stepper qty={qty} decrementQty={() => updateQty('decrease')} incrementQty={() => updateQty('increase')} />
           <button className="mdc-button mdc-button--raised">
-            <span className="mdc-button__label">Buy Now</span>
+            <span className="mdc-button__label lg:f-18-fw-500-lh-14 sm:f-8-fw-500-lh-14">Buy Now</span>
           </button>
           <button className="mdc-button mdc-button--outlined">
-            <span className="mdc-button__label">Add to Cart</span>
+            <span className="mdc-button__label lg:f-18-fw-500-lh-14 sm:f-8-fw-500-lh-14">Add to Cart</span>
           </button>
         </div>
       </div>

@@ -85,7 +85,7 @@ function Header({ cmsData }: { readonly cmsData: CmsMetaModel }) {
           </div>
         </div>
         <div className="mds-right-details">
-          <div className="mds-loginRegister-details">
+          <div className="mds-loginRegister-details ">
             <a href="#">Login</a>
             <span className="mds-separtor">|</span>
             <a href="#">Signup</a>

@@ -49,8 +49,8 @@ const NavBar = ({ setCurrentHeader }: { setCurrentHeader: Function }) => {
           <div className="mds-header-bottom-contact-details">
             <img src="/images/call-icon.webp" alt="" />
             <div className="mds-header-contactNumber">
-              <h6 className="mds-header-contactNumber-title">Contact Us 24/7</h6>
-              <p className="mds-header-contactNumber-description"> +12012987481</p>
+              <h6 className="mds-header-contactNumber-title lg:f-15-fw-300-lh-14">Contact Us 24/7</h6>
+              <p className="mds-header-contactNumber-description lg:f-18-fw-500-lh-14 mt-[5px]">+12012987481</p>
             </div>
           </div>
         </div>

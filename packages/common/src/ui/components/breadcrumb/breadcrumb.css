@@ -7,16 +7,17 @@
   justify-content: center;
 }
 
-.mds-banner-wrapper .mds-banner-title {
-  font-size: 40px;
-  font-weight: 500;
-  margin-bottom: 10px;
+.mds-banner-breadcrumb {
+  text-transform: uppercase;
 }
 
-.mds-banner-breadcrumb {
-  font-size: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
+@media (min-width: 992px) {
+  .mds-banner-wrapper {
+    height: 256px;
+  }
+  .mds-banner-wrapper .mds-banner-title {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -25,16 +26,6 @@
   }
 
   .mds-banner-wrapper .mds-banner-title {
-    font-size: 14px;
-  }
-
-  .mds-banner-breadcrumb {
-    font-size: 10px;
-  }
-}
-
-@media (min-width: 992px) {
-  .mds-banner-wrapper {
-    height: 256px;
+    margin-bottom: 10px;
   }
 }

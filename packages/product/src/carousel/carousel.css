@@ -1,13 +1,15 @@
 .carousel.carousel-slider {
-    background: #f1f1f1;
-    height: auto;
-    display: flex;
-    align-items: center;
+  background: #f1f1f1;
+  height: auto;
+  display: flex;
+  align-items: center;
 }
-.carousel .slide img{
-    object-fit: contain;
-    height: 300px;
+.carousel .slide img {
+  object-fit: contain;
+  height: auto;
+  max-height: 350px;
 }
-.carousel .thumb.selected, .carousel .thumb:hover {
-    border: 1px solid #e73c17;
+.carousel .thumb.selected,
+.carousel .thumb:hover {
+  border: 1px solid #e73c17;
 }

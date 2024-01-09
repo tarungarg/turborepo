@@ -40,7 +40,7 @@ const CustomTab = ({ data, defaultValue }: TabProps) => {
                       return (
                         <Tab
                           key={`tabHeader${index}`}
-                          className="mdc-tab mdc-tab__text-label"
+                          className="mdc-tab mdc-tab__text-label lg:f-24-fw-500-lh-14 sm:f-10-fw-500-lh-14"
                           label={header}
                           value={`${index}`}
                         />
@@ -50,7 +50,11 @@ const CustomTab = ({ data, defaultValue }: TabProps) => {
                 </Box>
                 {data?.descriptions?.map((desc, index) => {
                   return (
-                    <TabPanel key={`tabSummary${index}`} value={`${index}`} className="mdc-tab-content">
+                    <TabPanel
+                      key={`tabSummary${index}`}
+                      value={`${index}`}
+                      className="mdc-tab-content lg:f-18-fw-300-lh-32 sm:f-8-fw-300-lh-14"
+                    >
                       {desc}
                     </TabPanel>
                   )

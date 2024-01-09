@@ -6,7 +6,7 @@ export default async function Layout({ children }: { readonly children: React.Re
   console.log(cmsData)
 
   return (
-    <div className="container">
+    <div className="3xl:container">
       <Header cmsData={cmsData} />
       {children}
       <Footer cmsData={cmsData} />

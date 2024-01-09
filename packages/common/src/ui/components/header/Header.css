@@ -131,15 +131,12 @@
 }
 
 .mds-header-bottom-right .mds-header-contactNumber .mds-header-contactNumber-title {
-  font-size: 15px;
-  font-weight: 300;
   text-transform: uppercase;
-  margin-bottom: 5px;
 }
-
-.mds-header-bottom-right .mds-header-contactNumber .mds-header-contactNumber-description {
-  font-size: 18px;
-  font-weight: 500;
+.mds-header-bottom-right {
+  background: #f0f0f0;
+  height: 100px;
+  width: 2px;
 }
 
 /* tablet desktop */
@@ -163,12 +160,6 @@
   }
   .mds-header-bottom-categroies {
     gap: 27px;
-  }
-
-  .mds-header-bottom-right {
-    float: right;
-    border-left: 1px solid #f0f0f0;
-    height: 76px;
   }
 
   .mds-header-middle-wrapper {
