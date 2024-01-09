@@ -1,0 +1,75 @@
+.mds-tabs-container {
+  display: flex;
+}
+
+.MuiButtonBase-root.mdc-tab {
+  flex: initial !important;
+  font-size: 24px;
+  text-transform: capitalize;
+  margin: 0 40px;
+  padding: 16px 0;
+}
+
+.mdc-tab-scroller__scroll-content {
+  justify-content: center;
+}
+
+.mdc-tab .mdc-tab__text-label {
+  color: #191919;
+}
+
+.mdc-tab.mdc-tab--active {
+  border-bottom: 2px solid #e73c17;
+  padding: 0;
+}
+
+.mdc-tab-content {
+  width: 100%;
+  margin: auto;
+  padding: 32px 0;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.mdc-tab__content {
+  height: 30px;
+}
+
+.MuiTabPanel-root {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+@media (min-width: 992px) {
+  .mds-tabs-container {
+    padding: 80px 80px;
+  }
+  .mdc-tab-content {
+    max-width: 1002px;
+    max-height: 27em;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+  }
+  .MuiTabPanel-root {
+    padding-top: 38px !important;
+  }
+}
+@media (max-width: 991px) {
+  .mds-tabs-container {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 35px;
+  }
+
+  .mdc-tab-content {
+    max-height: 7em;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .MuiTabPanel-root {
+    padding-top: 16px !important;
+  }
+}

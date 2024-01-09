@@ -10,7 +10,8 @@
     "generate:component": "turbo gen react-component"
   },
   "dependencies": {
-    "@myshop/core": "*"
+    "@myshop/core": "*",
+    "@myshop/product": "*"
   },
   "devDependencies": {
     "@myshop/eslint-config": "*",

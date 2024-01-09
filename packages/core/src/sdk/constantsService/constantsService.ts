@@ -2,6 +2,8 @@ export default class ConstantService {
   static constants = new Map()
 
   static setConstants(key: string, value: string): void {
+    console.log(key,value);
+    
     this.constants.set(key, value)
   }
 

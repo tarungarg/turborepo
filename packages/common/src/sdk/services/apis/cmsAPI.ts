@@ -4,7 +4,6 @@ import type { OptionalFetchRequestTypeOptions } from '@myshop/core'
 import { GetCMSDetailsPath } from './apiConstants'
 
 export const getCMSDetails = <T>({ options }: { options?: OptionalFetchRequestTypeOptions }): T => {
-  console.log('optionsoptionsoptions', options)
   const req: FetchRequestType = {
     path: GetCMSDetailsPath,
     options: {

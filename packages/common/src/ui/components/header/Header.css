@@ -1,0 +1,227 @@
+.mds-badge {
+  position: absolute;
+  top: -20px;
+  background: #e73c17;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: -18px;
+}
+
+.mds-search-middle-details {
+  width: calc(100% - 435px);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.mds-right-details {
+  display: flex;
+  max-width: 300px;
+  width: 100%;
+  float: right;
+  justify-content: flex-end;
+}
+
+.mds-form {
+  display: flex;
+  align-items: center;
+  border: 1px solid #a8a8a8;
+  justify-content: space-between;
+}
+
+.mds-search-input {
+  border: none;
+  padding: 26px 30px;
+  font-size: 20px;
+  border-right: 1px solid #f0f0f0;
+  width: calc(100% - 270px);
+}
+
+.mds-search-input:focus {
+  outline: none;
+}
+
+.mds-all-categroies-data select {
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+.mds-addtocard-and-wishlist {
+  display: flex;
+  margin-left: 36px;
+  align-items: center;
+}
+
+.mds-cart-wrapper {
+  position: relative;
+}
+
+.mds-loginRegister-details a {
+  color: #191919;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.mds-separtor {
+  color: #f0f0f0;
+  margin: 0 6px;
+}
+
+.mds-header-bottom {
+  background: #2f333a;
+  color: #fff;
+}
+
+.mds-header-bottom-categroies {
+  background: #e73c17;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  padding: 23px 40px;
+  cursor: pointer;
+}
+
+.mds-header-bottom-row {
+  display: flex;
+  align-items: center;
+}
+
+.mds-header-bottom-middle {
+  justify-content: center;
+  display: flex;
+}
+
+.mds-header-bottom-middle .mds-header-menus-list {
+  display: flex;
+  list-style: none;
+  color: #fff;
+  padding-left: 0;
+}
+
+.mds-header-bottom-middle .mds-header-menus-list .mds-header-menu {
+  margin: 0 20px;
+}
+
+.mds-header-bottom-middle .mds-header-menus-list .mds-header-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.mds-header-bottom-middle .mds-header-menus-list .mds-header-menu.mds-header-menu-active a {
+  color: #e73c17;
+}
+
+.mds-header-bottom-contact-details {
+  display: flex;
+  align-items: center;
+}
+
+.mds-header-contactNumber {
+  margin-left: 30px;
+}
+
+.mds-header-bottom-right .mds-header-contactNumber .mds-header-contactNumber-title {
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.mds-header-bottom-right .mds-header-contactNumber .mds-header-contactNumber-description {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* tablet desktop */
+@media (min-width: 992px) {
+  .mds-header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 25px;
+    padding: 80px 80px;
+  }
+
+  .mds-header-bottom {
+    padding: 0px 80px;
+  }
+
+  .mds-header-bottom-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+  }
+  .mds-header-bottom-categroies {
+    gap: 27px;
+  }
+
+  .mds-header-bottom-right {
+    float: right;
+    border-left: 1px solid #f0f0f0;
+    height: 76px;
+  }
+
+  .mds-header-middle-wrapper {
+    display: flex;
+    border: 1px solid #a8a8a8;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+  }
+
+  .mdc-button.mdc-button--raised.mds-btn-search {
+    display: flex;
+    align-items: center;
+    background: #2f333a;
+    border: none;
+    color: #fff;
+    padding: 20px 22px;
+    margin-right: 2px;
+    border-radius: 0;
+    height: 66px;
+    svg {
+      height: 24px;
+    }
+  }
+
+  .mds-all-categroies-data {
+    display: flex;
+    gap: 12px;
+  }
+  .mds-search-icon-btn {
+    padding: 5px 5px;
+  }
+}
+
+/* mobiles */
+@media (max-width: 991px) {
+  .mds-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .mds-header-row {
+    padding: 20px 20px;
+  }
+  .mds-header-middle-wrapper {
+    display: none;
+  }
+
+  .mds-header-bottom {
+    padding: 0px 20px;
+  }
+
+  .brand-logo {
+    height: 19px;
+    width: 55px;
+  }
+}

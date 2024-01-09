@@ -7,5 +7,6 @@ export const lineHeight = {
   7.5: '2.8rem',
   8: '3.2rem',
   9: '3.6rem',
+  9.2: '3.8rem',
   10: '4.0rem',
 }

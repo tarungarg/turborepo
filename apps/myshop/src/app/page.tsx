@@ -10,8 +10,7 @@ export default function Home() {
   console.log('aaaa')
   return (
     <main className="">
-      <div className="e-f32-w500-lh12 text-e-grey2 text-wrap">adlfjadlsfjkdjsf</div>
-      <Link href="/login">ABC</Link>
+      <Link href="/login">Login</Link>
     </main>
   )
 }

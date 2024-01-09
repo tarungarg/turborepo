@@ -9,7 +9,7 @@ import React from 'react'
 function Login() {
   return (
     <h1>
-      <Link href="/">ABC</Link>
+      <Link href="/product">Product</Link>
     </h1>
   )
 }

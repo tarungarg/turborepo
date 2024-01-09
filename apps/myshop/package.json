@@ -11,7 +11,8 @@
   "dependencies": {
     "@myshop/common": "*",
     "@myshop/core": "*",
-    "@myshop/ui": "*"
+    "@myshop/ui": "*",
+    "@myshop/product": "*"
   },
   "devDependencies": {
     "@myshop/typescript-config": "*",

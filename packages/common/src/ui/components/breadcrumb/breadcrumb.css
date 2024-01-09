@@ -1,0 +1,40 @@
+.mds-banner-wrapper {
+  background: #f4f5f8;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mds-banner-wrapper .mds-banner-title {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.mds-banner-breadcrumb {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+  .mds-banner-wrapper {
+    height: 93px;
+  }
+
+  .mds-banner-wrapper .mds-banner-title {
+    font-size: 14px;
+  }
+
+  .mds-banner-breadcrumb {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .mds-banner-wrapper {
+    height: 256px;
+  }
+}

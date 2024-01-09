@@ -3,14 +3,14 @@ import { getCMSDetails, CmsMetaModel, Footer, Header } from '@myshop/common'
 
 export default async function Layout({ children }: { readonly children: React.ReactNode }) {
   const cmsData: CmsMetaModel = await getCMSData()
+  console.log(cmsData)
 
   return (
-    <>
+    <div className="container">
       <Header cmsData={cmsData} />
-      <div className="w-100"> adlfjadlsfjkdjsf</div>
       {children}
       <Footer cmsData={cmsData} />
-    </>
+    </div>
   )
 }
 
